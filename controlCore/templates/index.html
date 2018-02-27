@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spider Control Center</title>
+    <link rel="icon" href="./../static/newlog.ioc" type="image/x-icon"/>
+    <script src="./../static/jquery-1.12.4.min.js"></script>
+    <script src="./../static/jquery.color.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            // Set function to get computer information
+                function getPcInfo() {
+                    $.get("/pcInfo", function(resp){
+                        if(resp.errmsg == "OK"){
+                            $("#cpuNum").text(resp.data.cpuSum);
+                            $("#cpuUsedPer").text(resp.data.cpuUsedPer);
+                            $("#memUsedPer").text(resp.data.memUsedPer);
+                            $("#memUsedNum").text(resp.data.memUsedNum);
+                            $("#memTotal").text(resp.data.memTotal);
+                            $("#diskUsedPer").text(resp.data.diskUsedPer);
+                            $("#diskUsedNum").text(resp.data.diskUsedNum);
+                            $("#diskTotal").text(resp.data.diskTotal);
+                            $("#netSent").text(resp.data.netWorkSent);
+                            $("#netRecv").text(resp.data.netWorkRcve);
+                        }
+                    })
+                }
+                // Set the timer to execute this function every second
+                var oTimecount = setInterval(getPcInfo,1000);
+    
+    
+    
+            })
+    </script>
+    <style>
+        #PCinfo{
+            width: 300px;
+            height: 320px;
+            background: black;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #infoTitle{
+            width: 100%;
+            margin: 0;
+            color: green;
+            text-align: center;
+            font-size: 30px;
+        }
+        .detailInfo{
+            color:white;
+            font-size: 16px;
+            /* margin-left: 35px; */
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="PCinfo">
+        <h3 id="infoTitle">COMPUTER INFORMATION</h3>
+        <hr>
+        <p class="detailInfo">Logical CPU：<span id="cpuNum">-</span> ---- Used: <span id="cpuUsedPer">-</span></p>
+        <p class="detailInfo">Memeroy：<span id="memUsedPer">-</span> <br><span id="memUsedNum">-</span>/<span id="memTotal">-</span></p>
+        <p class="detailInfo">Disk：<span id="diskUsedPer">-</span> <br><span id="diskUsedNum">-</span>/<span id="diskTotal">-</span></p>
+        <p class="detailInfo">Net Work Total Sent：<span id="netSent">-</span> <br>Net Work Total Recv：<span id="netRecv">-</span></p>
+    </div>
+</body>
+</html>

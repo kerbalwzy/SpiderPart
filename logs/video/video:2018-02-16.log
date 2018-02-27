@@ -1,0 +1,28 @@
+Fri, 16 Feb 2018 18:19:39 weibo.py[line:58] INFO video spiders begin to run
+Fri, 16 Feb 2018 18:19:40 weibo.py[line:44] INFO parse url https://weibo.com/u/5644848255?is_all=1 and get response successful!, 
+Fri, 16 Feb 2018 18:19:40 weibo.py[line:60] INFO parse url to get cookie
+Fri, 16 Feb 2018 18:19:41 weibo.py[line:65] INFO get cookie successful, the key cookie is aabeaa17d9557111c805fb15a9959531
+Fri, 16 Feb 2018 18:19:41 weibo.py[line:68] INFO format cookie into request headers successful
+Fri, 16 Feb 2018 18:19:42 weibo.py[line:44] INFO parse url https://weibo.com/u/5644848255?is_all=1 and get response successful!, 
+Fri, 16 Feb 2018 18:19:42 weibo.py[line:76] INFO parse url to get response content string for data successful
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:80] INFO hand the html text into we need successful
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:83] INFO get elements for xpath successful
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:98] INFO threading which named videoDataHander2 to check and save data
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:98] INFO threading which named videoDataHander2 to check and save data
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:98] INFO threading which named videoDataHander2 to check and save data
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with 5cf81c1c066216cab97334421ab4d00f
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with 7d8cfbe0f2a3b0135c401e660fd54913
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with 868fdb564f2e8390cc763d9a0bb78206
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with f2a959b1d73d1ac50f59b0b2f0adf32f
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with b370f62f9f29cd0264466cffcd44f3ca
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with 5cf81c1c066216cab97334421ab4d00f
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with 22876537872013e8fecb763ae8e8b993
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with 1d53bd14d1d098315aee83e56fe252cc
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with 08ab9b96e0b5c103c62cff7f131a60f7
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with 17159c44219f8376ce13adfd828be25c
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with 1f2dbda50a6534fb04ab73d4d97be0ee
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with aaf61354c01f1c489b911c1f456d645e
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with 5bba9c914b7558b3b063f12b1c57ccdf
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with 77ed9b133772fbf7aaff447d142718d7
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:68] INFO data repeat which finger with e9d95288c8a22004bd5142eeed3a0178
+Fri, 16 Feb 2018 18:19:42 videoDataHandler.py[line:102] INFO video data queus is empty, the spiders will be stop
